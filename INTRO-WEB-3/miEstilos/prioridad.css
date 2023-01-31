@@ -1,0 +1,17 @@
+#dato0{
+    color: aqua;
+    font-size: 40px;
+}
+.pato{
+    color: coral;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+h3{
+    color: crimson;
+    text-align: center;
+    background-color: beige;
+}
+div{
+    height: 400px;
+    width: 400px;
+}
