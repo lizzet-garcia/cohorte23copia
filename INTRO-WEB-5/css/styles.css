@@ -39,7 +39,8 @@ margin-bottom: 30px;
 
 .menu ul{
     text-align: center;
-    margin: auto; padding: 0%;
+    margin: auto;
+     padding: 0%;
     list-style-type: none;
 }
 
@@ -47,12 +48,164 @@ margin-bottom: 30px;
 display: inline-block;
 position: relative;
 }
-
+/* padding establece el área de relleno en los cuatro lados de un elemento a la vez.*/
+/*backround es un atajo para definir los valores individuales del fondo en una única regla CSS*/
 .menu ul li a{
     background: #363636;
     color: #fff;
     font-size: 10px;
     text-decoration: none;
     display: block;
-    padding: 3px;
+    padding: 5px;
 }
+/*list-style-type: especifica la apariencia del listado.*/
+/*position especifica cómo un elemento es posicionado en el documento. Las propiedades top, right, bottom, y left determinan la ubicación*/
+.menu ul li ul{
+    position: absolute;
+    top: 25px;
+    left: 0;
+    list-style-type: none;
+    display: none;
+    height: auto;
+}
+/*El mecanismo de entrada primario puede convenientemente flotar sobre los elementos.*/
+.menu ul li:hover ul{
+    display: block;
+}
+/*la propiedad display establece los tipos de visualización interna y externa de un elemento*/
+/*especifica la anchura del area de contenido de un elemento.*/
+/*especifica la altura de un elemento*/
+/* establece el margen para los cuatro lados*/
+.menu ul li ul li{
+    display: block;
+    width: 70px;
+    height: 20px;
+    margin: 0%;
+    text-align: left;
+    font-size: 14px;
+}
+/*fin de header*/
+h2{
+    color: #b64d10;
+    text-transform: uppercase;
+}
+h2::before{
+    content: "//  ";
+}
+
+.clearfix:before{
+    display: table;
+    line-height: 1;
+    content: "/";
+}
+.pull-left{
+    float: left;
+}
+
+.row{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.col-60{
+    width: 60%;
+}
+
+.col-10{
+    width: 10%;
+}
+.col-40{
+    width: 40%;
+}
+.col-90{
+    width: 90%;
+}
+.col-20{
+    width: 20%;
+}
+.col-80{
+    width: 80;
+}
+    
+
+.education ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.education .year{
+font-size: 1.1em;
+font-weight: bold;
+}
+.education .description {
+    background: #EEEEEE;
+    border-bottom: 1px solid #DDDDDD;
+    padding: 10px;
+    margin-bottom: 10px;
+    position: relative;
+    box-sizing: border-box; 
+}
+
+.education .description h3, .education .description p{
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.education .description p::after {
+    content: "";
+    position: absolute;
+    border: 8px solid transparent ;
+    border-right: 8px solid #EEEEEE ;
+    top: 5px;
+    left: -16px;
+}
+.experience .job .where{
+    font-size: 1.2em;
+    font-weight: bold;
+}
+.year{
+    font-size: 0.6em;
+}
+.profesion{
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 2em;
+    font-size: 0.9em;
+    text-align: justify;
+}
+.description{
+    margin-top: 0;
+    margin-left: 2em;
+    text-align: justify;
+}
+.containerskill{
+    width: 100%;
+    background-color: #DDDDDD;
+}
+/*
+.html {width: 90%; background-color: aqua;}
+.css {width: 80%; background-color: blue;}
+.js {width: 65%; background-color: rgb(78, 16, 16);}
+.php {width: 60%; background-color: yellowgreen;}*/
+
+/* .skills {
+		list-style-type: none;
+		margin:0;
+		padding: 0;
+	}
+		.skills-item {				
+			color: #FFFFFF;
+			font-weight: bold;
+			text-transform: uppercase;
+			padding: 2px 0 2px 5px;
+			margin-top: 5px;				
+			background: #F0563D;
+			
+		}
+		.skills-item[data-percent="10"] { width: 10% }
+		.skills-item[data-percent="20"] { width: 20% }
+		.skills-item[data-percent="30"] { width: 30% }
+		.skills-item[data-percent="40"] { width: 40% }
+		.skills-item[data-percent="50"] { width: 50% }
+		.skills-item[data-percent="60"] { width: 60% }
+		.skills-item[data-percent="70"] { width: 70% }
+		.skills-item[data-percent="80"] { width: 80% }
+		.skills-item[data-percent="90"] { width: 90% } */
