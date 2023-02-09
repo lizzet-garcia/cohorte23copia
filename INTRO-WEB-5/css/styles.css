@@ -90,7 +90,7 @@ h2{
     text-transform: uppercase;
 }
 h2::before{
-    content: "//  ";
+    content: "// ";
 }
 
 .clearfix:before{
@@ -180,13 +180,9 @@ font-weight: bold;
     width: 100%;
     background-color: #DDDDDD;
 }
-/*
-.html {width: 90%; background-color: aqua;}
-.css {width: 80%; background-color: blue;}
-.js {width: 65%; background-color: rgb(78, 16, 16);}
-.php {width: 60%; background-color: yellowgreen;}*/
 
-/* .skills {
+
+ .skills {
 		list-style-type: none;
 		margin:0;
 		padding: 0;
@@ -208,4 +204,37 @@ font-weight: bold;
 		.skills-item[data-percent="60"] { width: 60% }
 		.skills-item[data-percent="70"] { width: 70% }
 		.skills-item[data-percent="80"] { width: 80% }
-		.skills-item[data-percent="90"] { width: 90% } */
+		.skills-item[data-percent="90"] { width: 90% } 
+/*Idiomas*/
+.icono-stars{
+    background: url(../images/star-grey.png)no-repeat;
+    width: 110px;
+    height: 14px;
+    float: right;
+}
+.icono-stars-red{
+    background: url(../images/star-red.png)no-repeat;
+    width: 110px;
+    height: 14px;
+    float: left;
+}
+.obj-stars{
+    margin: 5px;
+    padding: 5px;
+    border: 1px;
+}
+
+.hobby{
+    background: #F0563D;
+    color: #ebe1e1;
+    padding: 8px;
+    font-size: 0.6em;
+}
+
+footer p{
+    text-align: right;
+    font-size: 0.8em;
+    padding-top: 5px;
+    border-top: #DDDDDD;
+}
+
