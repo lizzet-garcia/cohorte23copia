@@ -64,3 +64,12 @@ lista11.sort (
     }
 );
 console.log(lista11);
+
+//.. map 
+let lista12 = [12,5,80,34,7];
+let lNueva = lista12.map(
+    function(valor){
+        return valor * 2
+    }
+);
+console.log(lNueva);
