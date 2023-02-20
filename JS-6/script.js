@@ -72,6 +72,49 @@ var botonDivision = document.getElementById("botonDivision");
 
 var resultado = document.getElementById("resultado");
 
+//construimos funciones de calculadora
+function suma (){
+    let valor1 = parseInt(input1.value); //pido numero1 entero
+    let valor2 = parseInt(input2.value); //pido num2 entero
+    let suma = valor1 + valor2; // calculo suma
+    resultado.innerHTML = suma; //pongo el resultado en su lugar
+
+}
+
+function resta (){
+    let valor1 = parseInt(input1.value); //pido numero1 entero
+    let valor2 = parseInt(input2.value); //pido num2 entero
+    let resta = valor1 - valor2; // calculo 
+    resultado.innerHTML = resta; //pongo el resultado en su lugar
+}
+function multiplicacion (){
+    let valor1 = parseInt(input1.value); //pido numero1 entero
+    let valor2 = parseInt(input2.value); //pido num2 entero
+    let multiplicacion = valor1 * valor2; // calculo 
+    resultado.innerHTML = multiplicacion; //pongo el resultado en su lugar
+}
+function division (){
+    let valor1 = parseInt(input1.value); //pido numero1 entero
+    let valor2 = parseInt(input2.value); //pido num2 entero
+    let division = valor1 / valor2; // calculo 
+    resultado.innerHTML = division; //pongo el resultado en su lugar
+}
+
+//EVENTO
+/*como se crea evento que no esta en HTML: (addEventListener)
+-node.addEventListener("evento a escuchar", lo que quiero que haga)
+  -node (nodo donde aterrizo el evento)
+  -addEventListener (palabra reservada para usar el evento)
+  -evento a escuchar (click, mousover,etc)
+   -lo que quiero que haga (la llamada de la funcion)
+
+*/
+botonSuma.addEventListener("click", suma);
+botonResta.addEventListener("click", resta);
+botonMultiplicacion.addEventListener("click", multiplicacion);
+botonDivision.addEventListener("click", division);
+
+
 /* creacion de etiqueta imagen*/
 var imagenPerrito = document.createElement("img");
 
@@ -89,3 +132,37 @@ document.body.append(imagenPerrito);
 
 var resultadoQueCambia = document.getElementById("resultado")
 resultadoQueCambia.innerHTML = "salu2"
+
+/*
+Manipulacion del DOM
+
+-Metodos para acceder a elementos
+document.getElementById
+document.getElementByTagName
+document.getElementByClassName
+
+-Metodos para crear elementos
+document.createElement(etiqueta)
+document.creatTextNode(texto)
+
+-Metodos para insertar elementos
+(parentElement).append
+(parentElement).insertBefore
+(parentElement).insertAdjacentElement
+
+-Metodos para modificar elementos
+(node).outerHTML (para leer o referenciar el elemento)
+(node).innerHTML (para modificar el elemento)
+*/ 
+
+/*evento: (pero se hizo tambien en el html en el boton suma)
+primer paso: definir con que interactuar y almacenar en variable
+ const textoAModificar = document.querySelector("#h1") 
+*/
+
+/*creo una funcion que cambia de color segun el color que le paso como parametro
+function cambiarColor(color){
+    textoAModificar.style.color=color;
+}
+
+*/
