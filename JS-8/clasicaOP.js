@@ -9,6 +9,13 @@ this.numero0 = valor0;
 this.numero1 = valor1;
 }
 
+// sin el constructor declarado:
+/*
+sumar(a + b){
+    return a +b 
+}
+
+*/
     sumar(){
         return this.numero0 + this.numero1;
 
