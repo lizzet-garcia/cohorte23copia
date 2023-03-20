@@ -1,0 +1,4 @@
+INDEX VERSION 1.131+C:\Users\Usuario\OneDrive\Escritorio\LOGICA PROGRAMACION\logica9\.metadata\.plugins\org.eclipse.jdt.core
+2523892762.index
+1865797976.index
+4019684297.index
